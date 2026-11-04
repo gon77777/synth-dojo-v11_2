@@ -1,0 +1,7 @@
+{
+  "appId": "com.local.synthdojo",
+  "appName": "シンセ道場",
+  "webDir": "www",
+  "server": { "androidScheme": "https" },
+  "backgroundColor": "#14202b"
+}

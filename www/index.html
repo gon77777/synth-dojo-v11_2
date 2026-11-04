@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="theme-color" content="#14202b"><link rel="manifest" href="manifest.json"><link rel="icon" type="image/png" href="icons/icon-192.png"><link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<title>シンセ道場</title><link rel="stylesheet" href="css/style.css"></head><body>
+<div id="app">
+ <div id="monbar" hidden></div>
+ <header id="top">
+  <button class="btn" data-act="toc">目次</button>
+  <button class="btn" data-act="presets">音色</button>
+  <button class="btn" id="synb" data-act="synth">アナログ</button>
+  <button class="btn" id="cshow" data-act="coachshow" hidden>解説</button>
+  <div class="oct"><button class="btn sm" data-act="octd">◀</button><span id="octl">OCT 0</span><button class="btn sm" data-act="octu">▶</button></div>
+  <button class="btn tg" id="holdb" data-act="hold">HOLD</button>
+  <button class="btn tg" id="fineb" data-act="fine">FINE</button>
+  <canvas id="scope"></canvas>
+  <button class="btn sm" data-act="cfg" aria-label="設定">⚙</button>
+  <div id="vol"></div>
+ </header>
+ <main id="main">
+  <section id="coach" hidden></section>
+  <section id="panel"><nav id="tabs"></nav><div id="grid"></div></section>
+ </main>
+ <div id="mbar">
+  <div class="mseg"><button data-act="mode" data-m="key" class="on">KEY</button><button data-act="mode" data-m="arp">ARP</button><button data-act="mode" data-m="seq">SEQ</button><button data-act="mode" data-m="trk">TRK</button></div>
+  <button class="btn tg" id="runb" data-act="run" aria-label="再生/停止">▶</button>
+  <div class="bpm" data-pid="sBpm"><button class="btn sm" data-act="bpmd">−</button><b id="bpml">120</b><button class="btn sm" data-act="bpmu">＋</button><button class="btn tg" data-act="tap">TAP</button></div>
+  <div id="beat"><i></i><i></i><i></i><i></i></div>
+  <button class="btn tg mini" id="midib" data-act="midi" aria-label="MIDI入力" hidden>MIDI</button>
+  <button class="btn tg mini" id="kbsb" data-act="kbs" aria-label="鍵盤の大きさ">鍵盤 ▼</button>
+ </div>
+ <div id="kbd"></div>
+</div>
+<div id="ov"></div><div id="toast"></div><div id="unsupb" hidden>このシンセは非対応です(この端末ではAudioWorkletが使えません)</div><div id="vload">VOICE MAX</div>
+<div id="start"><div class="st"><h1>シンセ道場</h1><p>タップして始める</p></div></div>
+<div id="rot">スマホを横向きにしてください</div>
+<script src="js/params.js"></script><script src="js/wtparams.js"></script><script src="js/mat.js"></script><script src="js/umat.js"></script><script src="js/swtparams.js"></script><script src="js/smpparams.js"></script><script src="js/grparams.js"></script><script src="js/fmparams.js"></script><script src="js/addparams.js"></script><script src="js/modlib.js"></script><script src="js/mixdefs.js"></script><script src="js/fxnew.js"></script><script src="js/fxparams.js"></script><script src="js/fxdsp.js"></script><script src="js/fxworklets.js"></script><script src="js/beat.js"></script><script src="js/meter.js"></script><script src="js/bus.js"></script><script src="js/synth.js"></script><script src="js/wtdata.js"></script><script src="js/swtdata.js"></script><script src="js/wtsynth.js"></script><script src="js/modsynth.js"></script><script src="js/gr.js"></script><script src="js/smp.js"></script><script src="js/fm.js"></script><script src="js/add.js"></script><script src="js/lessons.js"></script><script src="js/wtlessons.js"></script><script src="js/lessons2.js"></script><script src="js/seqlessons.js"></script><script src="js/modlessons.js"></script><script src="js/grlessons.js"></script><script src="js/fmlessons.js"></script><script src="js/addlessons.js"></script><script src="js/aulessons.js"></script><script src="js/course.js"></script><script src="js/th.js"></script><script src="js/ly.js"></script><script src="js/ldpd.js"></script><script src="js/bs.js"></script><script src="js/plsq.js"></script><script src="js/fxl.js"></script><script src="js/mbl.js"></script><script src="js/psl.js"></script><script src="js/rvl.js"></script><script src="js/gll.js"></script><script src="js/spl.js"></script><script src="js/vcl.js"></script><script src="js/cxl.js"></script><script src="js/auk.js"></script><script src="js/mt.js"></script><script src="js/ad.js"></script><script src="js/gn1.js"></script><script src="js/gn2.js"></script><script src="js/gn3.js"></script><script src="js/hs.js"></script><script src="js/eq.js"></script><script src="js/cm.js"></script><script src="js/ef.js"></script><script src="js/pn.js"></script><script src="js/fq.js"></script><script src="js/vo.js"></script><script src="js/mx.js"></script><script src="js/se.js"></script><script src="js/ms.js"></script><script src="js/ma.js"></script><script src="js/store.js"></script><script src="js/auto.js"></script><script src="js/sched.js"></script><script src="js/drums.js"></script><script src="js/voice.js"></script><script src="js/seq.js"></script><script src="js/midi.js"></script><script src="js/midimap.js"></script><script src="js/app.js"></script>
+</body></html>
